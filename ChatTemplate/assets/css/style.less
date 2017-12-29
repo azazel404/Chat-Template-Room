@@ -1,0 +1,484 @@
+// Color variables (appears count calculates by raw css)
+@color0: #ffffff; // Appears 11 times
+@color1: #f7f7f7; // Appears 5 times
+@color2: #93918f; // Appears 4 times
+@color3: #fbfbfb; // Appears 2 times
+
+// Width variables (appears count calculates by raw css)
+@width0: 65px; // Appears 1 time
+@width1: 100%; // Appears 15 times
+@width2: 50px; // Appears 2 times
+@width3: 40px; // Appears 1 time
+@width4: 60%; // Appears 2 times
+
+// Height variables (appears count calculates by raw css)
+@height0: calc(100% - 160px); // Appears 1 time
+@height1: calc(100% - 140px); // Appears 1 time
+@height2: calc(100% - 120px); // Appears 2 times
+@height3: calc(100% - 130px); // Appears 1 time
+@height4: 100px; // Appears 1 time
+@height5: 70px; // Appears 2 times
+@height6: 60px; // Appears 5 times
+@height7: 65px; // Appears 1 time
+@height8: 80px; // Appears 1 time
+@height9: 40px; // Appears 1 time
+@height10: 100%; // Appears 13 times
+@height11: 72px; // Appears 1 time
+@height12: 50px; // Appears 2 times
+
+html,body,div,span  {
+	height: @height10;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	width: @width1;
+}
+body {
+	background-color: @color0;
+	background-size: cover;
+}
+.fa-2x {
+	font-size: 1.5em !important;
+	font-size: 2.3em !important;
+}
+.app1 {
+	height: @height10;
+	margin : 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	width: @width1;
+}
+.app-one {
+	background-color: @color1;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .06), 0 2px 5px 0 rgba(0, 0, 0, .2);
+	height: @height10;
+	margin: 0 !important;
+	overflow: hidden;
+	padding: 0 !important;
+}
+.side {
+	height: @height10;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+.side-one {
+	display: block;
+	height: @height10;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: 0;
+	width: @width1;
+	z-index: 1;
+}
+.side-two {
+	-webkit-transition: left 0.3s ease;
+	height: @height10;
+	left: -100%;
+	margin: 0 !important;
+	padding: 0 !important;
+	position: relative;
+	top: -100%;
+	transition: left 0.3s ease;
+	width: @width1;
+	z-index: 2;
+}
+.heading {
+	background-color: blue;
+	background-color:blue;
+	height: @height5;
+	height: @height6;
+	margin: 0 !important;
+	padding: 10px 16px 10px 15px;
+	width: @width1;
+	z-index: 1000;
+}
+.heading-avatar {
+	cursor: pointer;
+	padding: 0 !important;
+	padding: 0 !important;
+}
+.heading-avatar-icon {
+	img {
+		border-radius: 50%;
+		height: @height12;
+		height: @height9;
+		width: @width2;
+		width: @width3;
+	}
+}
+.heading-name {
+	cursor: pointer;
+	padding: 0 !important;
+}
+.heading-name-meta {
+	color: white;
+	display: block;
+	font-size: 100%;
+	font-weight: 700;
+	padding-bottom: 0;
+	padding: 5px;
+	text-align: left;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.heading-online {
+	color: @color2;
+	display: none;
+	font-size: 12px;
+	padding: 0 5px;
+}
+.heading-compose {
+	padding: 0;
+	padding: 5px !important;
+	i {
+		color: @color0;
+		color: @color0;
+		cursor: pointer;
+		cursor: pointer;
+		padding: 5px;
+		text-align: center;
+	}
+}
+.heading-dot {
+	margin-left: 10px;
+	margin-left: 10px !important;
+	padding: 0;
+	padding: 5px !important;
+	i {
+		color: @color0;
+		color: @color0;
+		cursor: pointer;
+		cursor: pointer;
+		padding: 5px;
+		text-align: right;
+	}
+}
+.searchBox {
+	height: @height6;
+	margin: 0 !important;
+	padding: 0 !important;
+	width: @width1;
+}
+.searchBox-inner {
+	background-color: @color3;
+	height: @height10;
+	padding: 10px !important;
+	width: @width1;
+	input {
+		&:focus {
+			border: none;
+			box-shadow: none;
+			outline: none;
+		}
+	}
+}
+.sideBar {
+	background-color: @color0;
+	border: 1px solid @color1;
+	height: calc(@height10 - 120px);
+	height: calc(@height10 - 130px);
+	margin: 0 !important;
+	overflow-y: auto;
+	padding: 0 !important;
+}
+.sideBar-body {
+	border-bottom: 1px solid @color1;
+	cursor: pointer;
+	height: @height11;
+	height: @height8;
+	margin: 0 !important;
+	padding: 10px !important;
+	position: relative;
+	&:hover {
+		background-color: #f2f2f2;
+	}
+}
+.sideBar-avatar {
+	padding: 0 !important;
+	padding: 0 8px !important;
+	text-align: center;
+	text-align: left;
+}
+.avatar-icon {
+	img {
+		border-radius: 50%;
+		height: @height12;
+		height: @height7;
+		width: @width0;
+		width: @width2;
+	}
+}
+.sideBar-main {
+	padding: 0 !important;
+	padding: 0 !important;
+	.row {
+		margin: 0 !important;
+		margin: 0 !important;
+		padding: 0 !important;
+		padding: 0 !important;
+	}
+}
+.sideBar-name {
+	padding: 10px !important;
+	padding: 10px 5px !important;
+}
+.name-meta {
+	color: #000000;
+	font-size: 100%;
+	font-size: 16px;
+	padding: 1% !important;
+	padding: 5% !important;
+	text-align: left;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.sideBar-time {
+	padding: 10px !important;
+	padding: 10px !important;
+}
+.time-meta {
+	color: rgba(0, 0, 0, .4);
+	color: rgba(0, 0, 0, .4);
+	font-size: 12px;
+	font-size: 14px;
+	padding: 1% !important;
+	padding: 4% !important;
+	text-align: right;
+	text-align: right;
+	vertical-align: baseline;
+	vertical-align: baseline;
+}
+.newMessage {
+	height: @height10;
+	left: -100%;
+	margin: 0 !important;
+	padding: 0 !important;
+	position: relative;
+}
+.newMessage-heading {
+	background-color: blue;
+	height: @height4;
+	margin: 0 !important;
+	padding: 10px 16px 10px 15px !important;
+	width: @width1;
+	z-index: 1001;
+}
+.newMessage-main {
+	color: @color0;
+	height: @height6;
+	margin-top: 30px !important;
+	margin: 0 !important;
+	padding: 10px 16px 0 15px !important;
+	width: @width1;
+	z-index: 1001;
+}
+.newMessage-title {
+	color: white !important;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 10px 5px !important;
+}
+.newMessage-back {
+	cursor: pointer;
+	display: block;
+	padding: 12px 5px !important;
+	text-align: center;
+	vertical-align: baseline;
+	i {
+		margin: auto !important;
+	}
+}
+.composeBox {
+	height: @height6;
+	margin: 0 !important;
+	padding: 0 !important;
+	width: @width1;
+}
+.composeBox-inner {
+	background-color: @color3;
+	height: @height10;
+	padding: 10px !important;
+	width: @width1;
+	input {
+		&:focus {
+			border: none;
+			box-shadow: none;
+			outline: none;
+		}
+	}
+}
+.compose-sideBar {
+	background-color: @color0;
+	border: 1px solid @color1;
+	height: calc(100% - 1@height6);
+	margin: 0 !important;
+	overflow-y: auto;
+	padding: 0 !important;
+}
+.conversation {
+	border-left: 1px solid rgba(0, 0, 0, .08);
+	border-left: 1px solid rgba(0, 0, 0, .08);
+	height: @height10;
+	height: @height10;
+	margin: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	padding: 0 !important;
+}
+.message {
+	background-size: cover;
+	border: 1px solid @color1;
+	height: calc(100% - 1@height9);
+	height: calc(@height10 - 120px);
+	margin: 0 !important;
+	overflow-y: auto;
+	padding: 0 !important;
+}
+.message-previous {
+	height: auto;
+	margin : 0 !important;
+	padding: 0 !important;
+	width: @width1;
+}
+.previous {
+	cursor: pointer;
+	font-size: 15px;
+	padding: 10px !important;
+	text-align: center;
+	a {
+		font-weight: 700;
+		text-decoration: none;
+	}
+}
+.message-body {
+	height: auto;
+	margin: 0 !important;
+	padding: 0 !important;
+	width: auto;
+}
+.message-main-receiver {
+	max-width: @width4;
+}
+.message-main-sender {
+	margin-left: 40% !important;
+	max-width: @width4;
+	padding: 3px 20px !important;
+}
+.message-text {
+	font-size: 14px;
+	font-weight: 200;
+	margin: 0 !important;
+	padding-bottom: 0 !important;
+	padding: 5px !important;
+	word-wrap:break-word;
+}
+.message-time {
+	color: #9a9a9a;
+	font-size: 12px;
+	margin-left: 50px !important;
+	margin: 0 !important;
+	text-align: right;
+}
+.receiver {
+	background: @color0;
+	border-radius: 10px 10px 10px 0;
+	display: inline-block;
+	font-size: 12px;
+	padding: 4px 10px 7px !important;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+	width: auto !important;
+	word-wrap: break-word;
+}
+.sender {
+	background: #ffff;
+	border-radius: 10px 10px 0 10px;
+	display: inline-block;
+	float: right;
+	font-size: 12px;
+	padding: 4px 10px 7px !important;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+	width: auto !important;
+	word-wrap: break-word;
+}
+.reply {
+	background-color: @color0;
+	height: @height5;
+	height: @height6;
+	margin: 0 !important;
+	padding: 10px 5px 10px 5px !important;
+	width: @width1;
+	z-index: 1000;
+}
+.reply-emojis {
+	padding: 5px !important;
+	padding: 5px 0 !important;
+	i {
+		color: @color2;
+		cursor: pointer;
+		font-size: 1.8em !important;
+		padding: 5px 2px !important;
+		padding: 5px 5px 5px 5px !important;
+		text-align: center;
+	}
+}
+.reply-recording {
+	padding: 5px !important;
+	padding: 5px 0 !important;
+	i {
+		color: @color2;
+		cursor: pointer;
+		font-size: 1.8em !important;
+		padding: 5px !important;
+		padding: 5px 0 !important;
+		text-align: center;
+	}
+}
+.reply-send {
+	padding: 5px !important;
+	padding: 5px 0 !important;
+	i {
+		color: @color2;
+		cursor: pointer;
+		font-size: 1.8em !important;
+		padding: 5px !important;
+		padding: 5px 2px 5px 0 !important;
+		text-align: center;
+	}
+}
+.reply-main {
+	padding: 2px 5px !important;
+	padding: 2px 8px !important;
+	textarea {
+		border: none;
+		box-shadow: none;
+		font-size: 16px;
+		font-size: 18px;
+		height: @height10;
+		outline: none;
+		overflow: hidden;
+		padding: 5px !important;
+		padding: 8px !important;
+		resize: none;
+		text-indent: 5px;
+		width: @width1;
+		&:focus {
+			border: none;
+			box-shadow: none;
+			outline: none;
+			text-indent: 5px;
+		}
+	}
+}
+@media {
+	screen {
+		and {
+			(max-width {
+				&:700px) {
+					.app { top: 0;
+					height: @height10;
+					width : @width1;
+				}
+			}
+		}
+	}
+}
